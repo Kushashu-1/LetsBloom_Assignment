@@ -1,0 +1,18 @@
+<table border = 1>
+  <h1>All Book Details<h1>
+  <tr>
+    <td> {{"ID"}} </td>
+    <td> {{"Subject"}} </td>
+    <td> {{"Title"}} </td>
+    <td> {{"Author"}} </td>
+  </tr>
+  {% for entry in Details %}
+  <tr>
+    <td> {{entry[3]}} </td>
+    <td> {{entry[0]}} </td>
+    <td> {{entry[1]}} </td>
+    <td> {{entry[2]}} </td>
+  </tr>
+  {% endfor %}
+  <a href = "http://127.0.0.1:5000/" > <button type="button"  name = "addbook">Back To Home</button></a>
+</table>
